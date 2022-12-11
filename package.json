@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ci": "run-s lint build",
     "build": "rimraf -rf ./dist ./lib ./esm && rollup --config",
     "lint": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,6 +31,7 @@
     "eslint-plugin-import": "^2.26.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
